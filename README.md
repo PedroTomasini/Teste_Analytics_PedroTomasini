@@ -32,7 +32,8 @@ Para executar as consultas SQL e o notebook Jupyter, você precisará das seguin
 - Um banco de dados compatível com as consultas SQL.
 - Um ambiente Jupyter para executar o notebook.
 
-> **Aviso:** O dataset de vendas utilizado nesta análise foi gerado aleatoriamente. Isso significa que o conteúdo do dataset pode mudar a cada nova geração. O dataset específico utilizado para esta análise está salvo na pasta `datasets`.
+## Aviso: 
+O dataset de vendas utilizado nesta análise foi gerado aleatoriamente. Isso significa que o conteúdo do dataset pode mudar a cada nova geração. O dataset específico utilizado para esta análise está salvo na pasta `datasets`.
 
 
 
