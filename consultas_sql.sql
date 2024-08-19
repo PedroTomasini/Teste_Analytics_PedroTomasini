@@ -5,7 +5,7 @@ SELECT
     Categoria,
     SUM(Quantidade * Preço) AS Total_Vendas
 FROM 
-    vendas  -- Nome da tabela que contém os dados
+    data_clean  -- Nome da tabela que contém os dados
 GROUP BY 
     Produto, Categoria  -- Agrupa os resultados por produto e categoria
 ORDER BY 
@@ -17,14 +17,15 @@ ORDER BY
 
 -- Seleciona o produto e calcula o total vendido
 SELECT 
-    Produto,
-    SUM(Quantidade) AS Total_Vendido
+    Produto, 
+    Categoria, 
+    SUM(Quantidade) AS TotalQuantidadeVendida
 FROM 
-    vendas  -- Nome da tabela que contém os dados
+    data_clean  -- Nome da tabela que contém os dados
 WHERE 
-    EXTRACT(YEAR FROM Data) = 2023  -- Filtra os registros do ano 2023
-    AND EXTRACT(MONTH FROM Data) = 6  -- Filtra os registros do mês de junho
+    strftime('%m', Data) = '06' AND strftime('%Y', Data) = '2023'  -- Filtra os registros do mês de junho de 2023
 GROUP BY 
-    Produto  -- Agrupa os resultados por produto
+    Produto, 
+    Categoria  -- Agrupa os resultados por produto ecategoria
 ORDER BY 
     Total_Vendido ASC;  -- Ordena o resultado pela quantidade vendida, do menor para o maior
