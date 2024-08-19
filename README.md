@@ -1,1 +1,35 @@
-# Teste_Analytics_PedroTomasini
+# Estrutura do Repositório
+
+Este repositório contém os seguintes arquivos:
+
+- `consultas_sql.sql`: Arquivo contendo consultas SQL para análise de vendas.
+- `analise_vendas.ipynb`: Notebook Jupyter contendo análise de vendas.
+
+## Como Executar
+
+Para executar as consultas SQL, siga os passos abaixo:
+1. Abra o arquivo `consultas_sql.sql` em um editor de SQL.
+2. Execute as consultas no seu banco de dados.
+
+Para executar o notebook Jupyter `analise_vendas.ipynb`, siga os passos abaixo:
+1. Abra o notebook em um ambiente Jupyter.
+2. Execute as células do notebook para visualizar a análise de vendas.
+
+## Bibliotecas Usadas
+
+O notebook Jupyter `analise_vendas.ipynb` utiliza as seguintes bibliotecas:
+- Pandas
+- Matplotlib
+- Seaborn
+- Faker
+- Random
+- Datetime
+- Numpy
+
+## Dependências
+
+Para executar as consultas SQL e o notebook Jupyter, você precisará das seguintes dependências:
+- Um banco de dados compatível com as consultas SQL.
+- Um ambiente Jupyter para executar o notebook.
+
+Sinta-se à vontade para personalizar e adicionar mais informações conforme necessário para o seu projeto.
